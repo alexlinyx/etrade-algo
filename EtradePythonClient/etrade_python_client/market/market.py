@@ -27,8 +27,6 @@ class Market:
 
         # URL for the API endpoint
         url = self.base_url + "/v1/market/quote/" + symbols + ".json"
-        url2 = self.base_url + "/v1/market/quote/" + symbols + "?detailFlag=ALL"
-        print(self.session.get(url2))
 
         # Make API call for GET request
         response = self.session.get(url)
